@@ -328,6 +328,10 @@ static MPMediaItemArtwork* artwork = nil;
 - (void) updateNowPlayingInfo {
   NSMutableDictionary *nowPlayingInfo = [NSMutableDictionary new];
   if (mediaItem) {
+    
+    printf("FROM AUDIO SERVICEEEEEEEEEEEEEEEEEEEEee");
+    printf(mediaItem[@"album"]);
+
     nowPlayingInfo[MPMediaItemPropertyTitle] = mediaItem[@"title"];
     nowPlayingInfo[MPMediaItemPropertyAlbumTitle] = mediaItem[@"album"];
     nowPlayingInfo[MPMediaItemPropertyArtist] = mediaItem[@"artist"];
