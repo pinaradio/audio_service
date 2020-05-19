@@ -329,7 +329,7 @@ static MPMediaItemArtwork* artwork = nil;
   NSMutableDictionary *nowPlayingInfo = [NSMutableDictionary new];
   if (mediaItem) {
     
-    NSLog("FROM AUDIO SERVICEEEEEEEEEEEEEEEEEEEEee");
+    NSLog(@"FROM AUDIO SERVICEEEEEEEEEEEEEEEEEEEEee");
     NSLog(mediaItem[@"album"]);
 
     nowPlayingInfo[MPMediaItemPropertyTitle] = mediaItem[@"title"];
